@@ -2,10 +2,10 @@ version: '3'
 services:
   dev:
     build: .
-    command: npm run bash
+    command: 'yarn serve'
     volumes:
-      - .:/usr/src/app/
-      - /usr/src/app/node_modules
-    working_dir: /usr/src/app/
+      - .:/moienv/
+      - /moienv/node_modules
+    working_dir: /moienv/
     ports:
       - '8080:8080'

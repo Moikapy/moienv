@@ -4,8 +4,9 @@
   "description": "",
   "main": "./.moi/server/index.js",
   "scripts": {
-    "start": "docker-compose up",
-    "bash":"docker exec -it moienv_dev_1 bash"
+    "start": "docker-compose up --build -d && npm run bash",
+    "bash":"docker exec -it moienv_dev_1 bash",
+    "serve":"nodemon ./.moi/server/index.js"
   },
   "keywords": [],
   "author": "",
