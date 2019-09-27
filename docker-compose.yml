@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev:
+    build: .
+    command: npm run bash
+    volumes:
+      - .:/usr/src/app/
+      - /usr/src/app/node_modules
+    working_dir: /usr/src/app/
+    ports:
+      - '8080:8080'

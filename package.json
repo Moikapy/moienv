@@ -1,0 +1,16 @@
+{
+  "name": "moienv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./.moi/server/index.js",
+  "scripts": {
+    "start": "docker-compose up",
+    "bash":"docker exec -it moienv_dev_1 bash"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
